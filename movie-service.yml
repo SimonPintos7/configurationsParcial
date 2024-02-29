@@ -4,10 +4,10 @@ spring:
     url: jdbc:mysql://localhost:3366/movie-dev
     username: usr-movie
     password: pwd-movie
-    jpa:
-      hibernate.ddl-auto: update
-      generate-ddl: true
-      show-sql: true
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
