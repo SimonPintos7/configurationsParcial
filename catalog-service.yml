@@ -1,2 +1,10 @@
 server:
   port: 8082
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
