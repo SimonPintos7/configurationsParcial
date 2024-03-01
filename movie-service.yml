@@ -1,3 +1,6 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
@@ -8,13 +11,12 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+
 eureka:
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-    hostname: localhost
-    prefer-ip-address: 'true'
   client:
-    register-with-eureka: 'true'
-    fetch-registry: 'true'
-server:
-  port: ${PORT:${SERVER_PORT:0}}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
