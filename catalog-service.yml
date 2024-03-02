@@ -9,3 +9,12 @@ eureka:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
+
+# configuración de load balancer con feign
+feign:
+  client:
+    config:
+      default:
+        loadBalancer:
+          enabled: true
+          algorithm: random
