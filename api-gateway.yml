@@ -14,9 +14,6 @@ spring:
           uri: lb://catalog-service/
           predicates:
             - Path=/catalog/**
-            filters:
-            - LoadBalancerSpec:
-                algorithm: random
 
 eureka:
   client:
