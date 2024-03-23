@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: catalog-service
+  rabbitmq:
+    username: guest
+    password: guest
+    host: localhost
+    port: 5672
   mongodb:
     embedded: 
       version: 4.0.2
@@ -39,6 +44,10 @@ management:
     export:
       tracing:
         enabled: true
+
+queue:
+  rabbit-testing:
+    message: Anduvo
 
 resilience4j:
   circuitbreaker:
