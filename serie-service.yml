@@ -38,7 +38,6 @@ management:
   endpoint:
     health:
       show-details: always
-  metrics:
-    export:
-      tracing:
-        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
