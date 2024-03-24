@@ -46,7 +46,7 @@ management:
         enabled: true
 
 queue:
-  rabbit-testing:
+  rabbittesting:
     message: Anduvo
 
 resilience4j:
