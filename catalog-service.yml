@@ -46,8 +46,8 @@ management:
         enabled: true
 
 queue:
-  rabbit-testing:
-    message: Anduvo
+  rabbitmessage:
+    title: Working
 
 resilience4j:
   circuitbreaker:
