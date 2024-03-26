@@ -46,7 +46,7 @@ management:
 
 queue:
   rabbitmessage:
-    title: Working
+    catalog: Catalog-Working
 
 resilience4j:
   circuitbreaker:
