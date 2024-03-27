@@ -19,7 +19,7 @@ spring:
 
 queue:
   rabbitmessage:
-    serie: Serie-Working
+    serie: SerieWorking
 
 eureka:
   client:
