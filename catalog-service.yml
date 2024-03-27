@@ -46,8 +46,8 @@ management:
 
 queue:
   rabbitmessage:
-    movie: Movie-Working
-    serie: Serie-Working
+    movie: MovieWorking
+    serie: SerieWorking
 
 resilience4j:
   circuitbreaker:
