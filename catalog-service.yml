@@ -46,7 +46,8 @@ management:
 
 queue:
   rabbitmessage:
-    title: Catalog-Working
+    movie: Movie-Working
+    serie: Serie-Working
 
 resilience4j:
   circuitbreaker:
