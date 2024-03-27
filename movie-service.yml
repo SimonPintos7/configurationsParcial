@@ -23,7 +23,7 @@ spring:
 
 queue:
   rabbitmessage:
-    movie: Movie-Working
+    movie: MovieWorking
 
 eureka:
   client:
